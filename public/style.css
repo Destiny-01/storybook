@@ -1,0 +1,38 @@
+p {
+  margin: 10px 0 !important;
+}
+
+.login-container {
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fa-small {
+  font-size: 16px !important;
+}
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+span.h {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-floating.halfway-fab {
+  position: absolute;
+  right: 24px;
+  bottom: -30px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    width: 300px;
+    margin-top: 50px;
+    text-align: center;
+  }
+}

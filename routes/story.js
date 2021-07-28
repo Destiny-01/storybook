@@ -12,7 +12,7 @@ router.post("/", ensureAuth, async (req, res) => {
   try {
     req.body.user = req.user.id;
     const story = await Story.create(req.body);
-    res.redirect("/story" + story._id);
+    res.redirect("/story/" + story._id);
   } catch (err) {
     console.error(err);
     res.render("error/500");

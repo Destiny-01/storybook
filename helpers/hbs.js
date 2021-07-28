@@ -20,10 +20,25 @@ module.exports = {
   editIcon: function (storyUser, loggedUser, storyId, floating = true) {
     if (storyUser._id.toString() == loggedUser._id.toString()) {
       if (floating) {
-        return `<a href="/stories/edit/${storyId}" class="btn-floating halfway-fab blue"><i class="fas fa-edit fa-small"></i></a>`;
+        return `<a href="/stories/edit/${storyId}" class="btn-floating halfway-fab blue mb-5"><i class="fas fa-edit fa-small"></i></a>`;
       } else {
         return `<a href="/stories/edit/${storyId}"><i class="fas fa-edit"></i></a>`;
       }
+    } else {
+      return "";
+    }
+  },
+  deletepp: function (storyUser, loggedUser, storyId) {
+    if (storyUser._id.toString() == loggedUser._id.toString()) {
+      return `<form action="/stories/${storyId}" method="post" id="delete-form">
+            <input type="hidden" name="_method" value="DELETE" />
+            <button
+              type="submit"
+              class="btn btn-floating btn-small waes-effect waves-light red"
+            >
+              <i class="fas fa-trash"></i>
+            </button>
+          </form>`;
     } else {
       return "";
     }

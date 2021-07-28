@@ -29,6 +29,10 @@ span.h {
   bottom: -30px !important;
 }
 
+.card-content {
+  margin-bottom: 18px !important;
+}
+
 @media screen and (max-width: 480px) {
   .login-container {
     width: 300px;

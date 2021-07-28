@@ -34,11 +34,12 @@ const {
   truncate,
   editIcon,
   select,
+  deletepp,
 } = require("./helpers/hbs");
 app.engine(
   ".hbs",
   exphbs({
-    helpers: { formatDate, stripTags, truncate, editIcon, select },
+    helpers: { formatDate, stripTags, truncate, editIcon, select, deletepp },
     defaultLayout: "main",
     extname: ".hbs",
   })

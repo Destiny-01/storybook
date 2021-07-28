@@ -33,6 +33,22 @@ span.h {
   margin-bottom: 18px !important;
 }
 
+footer {
+  background-color: black;
+  padding: 2px;
+  position: relative;
+  width: 100%;
+  color: whitesmoke;
+  top: 8px;
+  text-align: center;
+}
+
+footer a {
+  display: inline !important;
+  padding: 0 !important;
+  color: #039be5 !important;
+}
+
 @media screen and (max-width: 480px) {
   .login-container {
     width: 300px;
